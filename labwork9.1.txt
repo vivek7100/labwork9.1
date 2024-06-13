@@ -1,0 +1,79 @@
+﻿Q.1 Write a Program to convert the given string in uppercase without using any string function.
+For example,
+Input:
+Enter any string: hello world
+
+
+Output:
+Uppercase string: HELLO WORLD
+
+
+
+
+Ans:#include<stdio.h>
+void main(){
+    char k[11]="helloworld";
+    printf("Enter any string:helloworld");
+    printf("\nUppercase string:");
+    for(int i=0;i<11;i++){
+        printf("%c",k[i]-32);
+    }
+}
+O\p: /tmp/ZYL0b0NYtN.o
+Enter any string:helloworld
+Uppercase string:HELLOWORLD
+
+
+=== Code Exited With Errors ===
+Q.2 Write a Program to convert the given string in lowercase without using any string function.
+For example,
+Input:
+Enter any string: HELLO WORLD
+
+
+Output:
+Lowercase string: hello world
+Ans: #include<stdio.h>
+void main(){
+    char k[11]="HELLOWORLD";
+    printf("Enter any string:HELLO WORLD");
+    printf("\nUppercase string:");
+    for(int i=0;i<11;i++){
+        printf("%c",k[i]+32);
+    }
+}
+O\p: /tmp/A5CIDfok0t.o
+Enter any string:HELLO WORLD
+Uppercase string:helloworld 
+
+
+=== Code Exited With Errors ===
+Q.3 Write a Program to convert the given string in toggle case without using any string function.
+For example,
+Input:
+Enter any string: HelLo worLD
+
+
+Output:
+Toggle case string: hELlO WORld
+Ans: #include<stdio.h>
+void main(){
+    char k[11]="HelLoworLD";
+    printf("Enter any string:HelLoworLD");
+    printf("\nToggle case string:");
+    for(int i=0;i<11;i++){
+        if(k[i] >= 'a' && k[i] <= 'z'){
+        printf("%c",k[i]-32);
+    }
+    
+    else if(k[i] >= 'A' && k[i] <= 'Z'){
+           printf("%c",k[i]+32);
+    }
+}
+}
+O\p: /tmp/ywX7ohcCGM.o
+Enter any string:HelLoworLD
+Toggle case string:hELlOWORld
+
+
+=== Code Execution Successful ===
